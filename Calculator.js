@@ -19,13 +19,13 @@ if (Arithmetic == "+"){
     alert("Subtraction Of The Numbers Is Equal To: " + Subtraction)
 
 }else if(Arithmetic == "*"){
-    alert("Multiplying Of The Numbers Is Equal To: " + Number1 * Number2)
+    alert("Multiplication Of The Numbers Is Equal To: " + Number1 * Number2)
 
 }else if(Arithmetic == "/" && Number2 == "0"){
     alert("Division By Zero Is Not Possible. (REFRESH THE PAGE TO TRY AGAIN)")
 
 }else if(Arithmetic == "/"){
-    alert("Dividing Of The Numbers Is Equal To: " + Number1 / Number2)
+    alert("Division Of The Numbers Is Equal To: " + Number1 / Number2)
 
 }else if(Arithmetic && Number2 != "0"){
     alert("You Must Enter + or - or / or *. (REFRESH THE PAGE TO TRY AGAIN)")
