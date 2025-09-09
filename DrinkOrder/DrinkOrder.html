@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/DrinkOrder/DrinkOrder.css" />
+    <title>DrinkOrder</title>
+  </head>
+  <body>
+    <h2>Drink Order Maker</h2>
+    <div class="DrinkSelector" id="DrinkCard">
+      <h3 id="DrinkText">Select The Type Of Drink</h3>
+      <input type="text" placeholder="YourName" id="NameInput"/>
+      <select id="DrinkSelect">
+        <option value="" disabled selected>-- Drink Selection --</option>
+        <option value="🍵 Tea">🍵 Tea</option>
+        <option value="☕ Coffee">☕ Coffee</option>
+        <option value="🍹 Orange Juice">🍹 Orange Juice</option>
+        <option value="🥛 Banana Milk">🥛 Banana Milk</option>
+      </select>
+      <input type="text" placeholder="Additives(Example: Suger, Candy, Sweets)" id="Additives"/>
+      <div>
+        <button class="Choices" onclick="Sumbit()">Order Registration</button>
+        <button class="Choices" onclick="ChangeTheme()">Change The Theme</button>
+        <button class="Choices" onclick="Reset()">Clear The List</button>
+      </div>
+      <span id="error"></span>
+    </div>
+    <div class="Orders" id="orderlist">
+      <h3>Your Orders:</h3>
+      <ul id="ordersUI">
+
+      </ul>
+    </div>
+    <script src="/DrinkOrder/DrinkOrder.js"></script>
+  </body>
+</html>
