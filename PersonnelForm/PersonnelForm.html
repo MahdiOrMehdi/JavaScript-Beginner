@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/PersonnelForm/PersonnelForm.css" />
+      <title>Information Registration Form</title>
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>User Information Registration</h2>
+        <form id="userForm" action="">
+          <input type="text" id="name" placeholder="Name" required />
+          <input type="text" id="lastName" placeholder="LastName" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="job" placeholder="Job" />
+          <input type="tel" id="phone" placeholder="Phone Number" />
+
+          <select id="gender">
+            <option value="" disabled selected>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+
+          <button type="submit">Add A New User</button>
+        </form>
+
+        <div class="buttons">
+          <button id="showModal">Show All Users</button>
+          <button id="findByEmail">Find By Email</button>
+          <button id="checkIfAllHaveJob">Is Everyone Employed?</button>
+          <button id="checkIfAnyIsMale">Is There At Least One Man?</button>
+        </div>
+      </div>
+
+      <div id="overlay" class="overlay"></div>
+      <div id="modal" class="modal"></div>
+
+      <script src="/PersonnelForm/PersonnelForm.js"></script>
+    </body>
+</html>
