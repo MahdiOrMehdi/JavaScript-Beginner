@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/ListOfUsers/ListOfUsers.css" />
+    <title>List Of Users</title>
+  </head>
+  <body>
+    <h1>List Of Users</h1>
+    <div>
+      <input type="text" id="name" placeholder="Name">
+      <input type="text" id="phone" placeholder="Phone">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="address" placeholder="Address">
+      <button onclick="AddUser()">Add User</button>
+    </div>
+    <button class="button" onclick="List()">Users</button>
+    <table id="THead">
+          <thead class="p_sticky">
+            <tr>
+              <th>Row</th>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>Operations</th>
+            </tr>
+          </thead>
+          <tbody id="TBody">
+          </tbody>
+    </table>
+    <script src="/ListOfUsers/ListOfUsers.js"></script>
+  </body>
+</html>
