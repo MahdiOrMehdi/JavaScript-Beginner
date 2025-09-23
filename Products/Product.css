@@ -1,0 +1,142 @@
+@font-face {
+  font-family: Sansation;
+  src: url(/assets/fonts/Sansation-Bold.ttf);
+}
+
+
+body {
+  font-family: Sansation;
+  padding: 20px;
+  flex-direction: column;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  direction: rtl;
+  background: linear-gradient(#5a5959, #5a5959ee, #5a5959e3, #5a5959d0, #5a5959bd, #5a5959b0, #5a5959ab);
+}
+
+button {
+  background: red;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.491);
+  cursor: pointer;
+  transition: all 500ms;
+  font-family: inherit;
+  font-weight: bolder;
+  border: none;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.products {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px #009688;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px #009687e5;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.1rem;
+  color: #009688;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.add-to-cart {
+  margin-top: 8px;
+  background: #009688;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-to-cart:hover {
+  background: #00796b;
+}
+
+.cart {
+  flex: 1;
+  background: linear-gradient(#ffffff, #fffffff6, #ffffffec, #ffffffd7);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.cart-items li {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.total {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 15px;
+  color: #333;
+}
+
+.cart-items li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#GamingLi{
+  display: none;
+}
+
+#SamsungLi{
+  display: none;
+}
+
+#AppleLi{
+  display: none;
+}
+
+#XiaomiLi{
+  display: none;
+}

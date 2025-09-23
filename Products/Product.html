@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Products/Product.css">
+    <title>Products</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Products -->
+    <div class="products">
+      <div class="product">
+        <img src="/assets/images/GamingPhone.webp" alt="Gaming Phone">
+        <h3>Gaming Phone</h3>
+        <p class="price">800$</p>
+        <button class="add-to-cart" id="Gaming-Phone">Add To Cart</button>
+      </div>
+
+
+      <div class="product">
+        <img src="/assets/images/SamsungPhone.webp" alt="Samsung Phone">
+        <h3>Samsung Phone</h3>
+        <p class="price">850$</p>
+        <button class="add-to-cart" id="Samsung-Phone">Add To Cart</button>
+      </div>
+
+
+      <div class="product">
+        <img src="/assets/images/ApplePhone.jpg" alt="Apple Phone">
+        <h3>Apple Phone</h3>
+        <p class="price">800$</p>
+        <button class="add-to-cart" id="Apple-Phone">Add To Cart</button>
+      </div>
+      <div class="product">
+        <img src="/assets/images/XiaomiPhone.jpg" alt="Xiaomi Phone">
+        <h3>Xiaomi Phone</h3>
+        <p class="price">350$</p>
+        <button class="add-to-cart" id="Xiaomi-Phone">Add To Cart</button>
+      </div>
+    </div>
+    
+    <!-- Cart  -->
+    <div class="cart">
+      <h2>Cart 🛒</h2>
+      <ul class="cart-items" id="cart-items">
+        <li id="AppleLi"></li>
+        <li id="SamsungLi"></li>
+        <li id="XiaomiLi"></li>
+        <li id="GamingLi"></li>
+      </ul>
+      <p class="total">Total Sum: <span id="total-price">0</span></p>
+    </div>
+  </div>
+  <script src="/Products/Product.js"></script>
+</body>
+</html>
