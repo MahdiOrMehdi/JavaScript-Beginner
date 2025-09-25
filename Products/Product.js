@@ -33,9 +33,7 @@ GamingPhone.addEventListener("click", ()=> {
         Newli.style.display = "flex"
         Newli.innerHTML = ``
         Newli.innerHTML = `<p>Gaming-Phone x ${TSNGaming}</p><span>Price: ${TSGaming.toLocaleString('en-US')}$</span><button onclick="DeleteGamingP()">Delete</button>`
-        if (!cartItems.appendChild(Newli)){
-            cartItems.appendChild(Newli)
-        }
+        cartItems.appendChild(Newli)
 } 
 )
 
@@ -64,9 +62,7 @@ SamsungPhone.addEventListener("click", ()=> {
         Newli.style.display = "flex"
         Newli.innerHTML = ``
         Newli.innerHTML = `<p>Samsung-Phone x ${TSNSamsung}</p><span>Price: ${TSSamsung.toLocaleString('en-US')}$</span><button onclick="DeleteSamsung()">Delete</button>`
-        if (!cartItems.appendChild(Newli)){
-            cartItems.appendChild(Newli)
-        }
+        cartItems.appendChild(Newli)
 } 
 )
 
@@ -95,9 +91,7 @@ ApplePhone.addEventListener("click", ()=> {
         Newli.style.display = "flex"
         Newli.innerHTML = ``
         Newli.innerHTML = `<p>Apple-Phone x ${TSNApple}</p><span>Price: ${TSApple.toLocaleString('en-US')}$</span><button onclick="DeleteApple()">Delete</button>`
-        if (!cartItems.appendChild(Newli)){
-            cartItems.appendChild(Newli)
-        }
+        cartItems.appendChild(Newli)
 } 
 )
 
@@ -126,10 +120,7 @@ XiaomiPhone.addEventListener("click", ()=> {
     const Newli = document.getElementById('XiaomiLi')
         Newli.style.display = "flex"
         Newli.innerHTML = `<p>Xiaomi-Phone x ${TSNXiaomi}</p><span>Price: ${TSXiaomi.toLocaleString('en-US')}$</span><button onclick="DeleteXiaomi()">Delete</button>`
-        if (!cartItems.appendChild(Newli)){
-            cartItems.appendChild(Newli)
-        }
-    
+        cartItems.appendChild(Newli)
     } 
 )
 
